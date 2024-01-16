@@ -1,0 +1,392 @@
+/*theme css */
+
+.dark{
+		background-color:#1f4959;
+		color:white ;
+}
+.light{
+		background-color: white;
+		color: black ;
+}
+.text-dark{
+	color: black !important;
+}
+.text-light{
+	color: white !important;
+}
+
+/*line*/
+
+.nav-link{
+			color: blue;
+		}
+.nav-link::after{
+			content: "";
+			background-color:#5c7c89;
+			width: 100%;
+			display: block;
+			height: 2px;
+			transform-origin: left;
+			transform: scaleX(0);
+			transition: transform 1s ease;	
+		}
+.nav-link:hover::after{
+			transform: scaleX(1);
+		}
+
+.bg{
+	height: 500px;
+	background-position:center;
+	background-size: cover;
+	width: 100%;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.45),rgba(0, 0, 0, 0.45)),url(img/background.png);
+	text-align: center;
+	position: relative;
+}
+.bt{
+	background: linear-gradient(to right,transparent 50%,#5c7c89 50%);
+	background-size: 200px;
+	background-position:left ;
+	color: white;
+	transition: background-position 0.5s;
+	margin-top: 50px;
+}
+.bt:hover{
+	background-position: right;
+	
+}
+
+.tt{
+	font-size: 50px;
+}
+.f{
+	margin-top:15% ;
+}
+
+
+.animation {
+  height:90px;
+  overflow:hidden;
+  margin-left: 1rem; 
+  font-size: 40px;
+}
+
+.animation > div > div {
+  padding: 0.25rem 0.75rem;
+  height:3.5rem;
+  margin-bottom: 2.5rem;
+  display:inline-block;
+}
+
+.animation div:first-child {
+  animation: text-animation 8s infinite;
+}
+
+@keyframes text-animation {
+  0% {margin-top: 0;}
+  10% {margin-top: 0;}
+  20% {margin-top: -5.62rem;}
+  30% {margin-top: -5.62rem;}
+  40% {margin-top: -11.24rem;}
+  60% {margin-top: -11.24rem;}
+  70% {margin-top: -5.62rem;}
+  80% {margin-top: -5.62rem;}
+  90% {margin-top: 0;}
+  100% {margin-top: 0;}
+}
+
+.font{
+	color: transparent;
+    font-size: 8vw;
+    font-weight: 700;  
+    -webkit-text-stroke: 2px silver;
+  transform: translate(-50%,-50%);
+  background-image: linear-gradient(black,#5c7c89);
+  background-size: 100% 10px;
+  background-repeat: no-repeat;
+  background-position: 100% 0%;
+    text-shadow: 7px 9px 6px #e6be8a;
+   transition: background-size .7s, background-position .5s ease-in-out;
+}
+.font:hover {
+  background-size: 100% 100%;
+  background-position: 0% 100%;
+  transition: background-position .7s, background-size .5s ease-in-out;
+}
+
+/*About image*/
+
+.rounded{
+	width: 250px;
+	height: 250px;
+	border-radius: 50%!important;
+}
+
+.head{
+	text-shadow: 11px 8px 3px #778899;
+}
+
+
+
+/*Education*/
+
+
+.mg{
+	margin-top: 10%;
+}
+
+
+/*Education card*/
+
+
+
+.cardcss{
+	border: none;
+	background:	 none;
+}
+
+.con .cardcss .icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.con .cardcss .icon .t-card {
+
+    position: absolute;
+
+    top: 50%;
+
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+    color: #fff;
+
+}
+
+.con .cardcss .slide {
+
+    width: 300px;
+
+    height: 200px;
+
+    transition: 0.5s;
+
+}
+
+.con .cardcss .slide.slide1 {
+
+    position: relative;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    z-index: 1;
+
+    transition: .7s;
+
+    transform: translateY(100px);
+    background:  background: blue;
+	background: linear-gradient(90deg, rgba(226,62,87,1) 15%, rgba(136,48,78,1) 30%, rgba(82,37,70,1) 50%, rgba(49,29,63,1) 71%);
+
+
+
+}
+.con .cardcss:hover .slide.slide1{
+
+    transform: translateY(0px);
+
+}
+.con .cardcss .slide.slide2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  
+
+    transition: .8s;
+
+    transform: translateY(-100px);
+
+    box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+    background: black;
+    color: white;
+
+}
+
+.con .cardcss:hover .slide.slide2{
+
+    transform: translateY(0);
+
+}
+
+.con .cardcss .slide.slide2::after{
+
+    content: "";
+    position: absolute;
+    transform: translateX(-50%);
+
+    
+}
+
+/*Skills*/
+
+.text{
+    color: #e6be8a;
+}
+
+
+.fo{
+    font-family: Segoe UI Light;
+    font-size: 15px;
+
+}
+
+
+/*carousel item*/
+
+.cimg{
+    width: 100%;
+    height: 400px;
+}
+.mimg{
+    height: 250px;
+}
+.cor{
+    width: 80%;
+}
+
+
+
+/*carousel cursor*/
+
+.carousel:hover{
+    cursor: pointer;
+}
+
+
+/*Contact*/
+
+.left{
+    position: relative;
+    background: #fff;
+    border-radius: 25px;
+    height: 100%;
+    padding: 25px;
+    text-align: center;
+}
+
+.left header{
+    color: black;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+
+
+ .myRightctn{
+    position: relative;
+    background: black;
+    box-shadow: 2.5px 4.33px 15px 0px black;
+    border-radius: 25px;
+    height: 100%;
+    padding: 25px;
+    color: white;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+.mycard{
+    position: relative;
+    background: #fff;
+    height: 80%;
+    border-radius: 25px;
+    box-shadow:  0px 10px 40px -10px rgba(0,0,0,0.7);
+  }
+.myRightctn header{
+    color: #fff;
+    font-size: 44px;
+  }
+  .box{
+    position: relative;
+    margin: 20px;
+    margin-bottom: 100px;
+  }
+  .left .myInput{
+    width: auto;
+    border-radius: 25px;
+    padding: 6px;
+    border:none;
+  }
+
+  .myInputDiv{
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 25px;
+    margin-top: 15px;
+    background: white;
+    border:none;
+    box-shadow: 0px 10px 49px -14px rgba(0,0,0,0.7);
+  }
+  .left .myInput:focus{
+    outline: none;
+  }
+  .myform{
+    position: relative;
+    margin-top: 50px;
+  }
+  .left .cbtn{
+    background: black;
+    color: #fff;
+    width: 230px;
+    border: none;
+    border-radius: 25px;
+    padding: 10px;
+    margin-top: 15px;
+    box-shadow: 0px 10px 41px -11px rgba(0,0,0,0.7);
+  }
+.left .cbtn:hover{
+    background: linear-gradient(45deg,white,black,black,white);
+  }
+.left .cbtn:focus{
+    outline: none;
+  }
+.left .fa{
+    color: black;
+  }
+.social{
+    background: transparent;
+    color:white;
+    width: 120px;
+    border: 2px solid #fff;
+    border-radius: 25px;
+    padding:10px;
+    box-shadow: 0px 10px 49px -14px white;
+  }
+.social:hover{
+    border: 2px solid black;
+  }
+.social:focus{
+    outline: none;
+  }
+.text-magic{
+    margin-left: 8px; 
+  }
+
+.social a{
+    font-size: 30px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+
+.foot{
+    background: black;
+    
+}
